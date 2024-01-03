@@ -1,8 +1,11 @@
-function App() {
+import InsertSourceArticel from "components/atoms/insert-source-article"
 
-  return <div className='bg-red-400'>
-    Symmetry
-  </div>
+function App() {
+    return (
+        <div className="bg-red-200 h-screen">
+            <InsertSourceArticel />
+        </div>
+    )
 }
 
 export default App
