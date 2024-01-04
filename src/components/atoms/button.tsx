@@ -5,11 +5,13 @@ export default function Button({
     onClick,
     children,
     className,
+    title
 }: {
     label?: string
     onClick: () => void
     children?: ReactNode
     className?: string
+    title?: string
 }) {
     return (
         <button
@@ -17,6 +19,7 @@ export default function Button({
             className={`bg-slate-400 p-3 rounded-xl hover:bg-slate-500 active:bg-green-400 ${
                 className ?? ""
             }`}
+            title={title}
         >
             {label ?? ""}
             {children ?? ""}
